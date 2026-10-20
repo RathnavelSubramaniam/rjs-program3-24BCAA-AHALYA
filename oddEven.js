@@ -4,7 +4,7 @@
 // Return "Odd" if the number is odd.
 
 // Example:
-// checkOddEven(8) ? "Even"
+// checkOddEven(8) ? "Even
 // checkOddEven(5) ? "Odd"
 
 const checkOddEven = (num) => {
