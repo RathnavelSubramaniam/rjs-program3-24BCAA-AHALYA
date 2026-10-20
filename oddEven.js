@@ -1,4 +1,5 @@
 // Write an arrow function to check whether a number is Odd or Even.
+
 // Return "Even" if the number is even.
 // Return "Odd" if the number is odd.
 
@@ -7,8 +8,16 @@
 // checkOddEven(5) ? "Odd"
 
 const checkOddEven = (num) => {
-    // Write your code here
-
+    if (num % 2 === 0) {
+        return "Even";
+    } else {
+        return "Odd";
+    }
 };
+
+if (require.main === module) {
+    const input = require("fs").readFileSync(0, "utf8").trim();
+    console.log(checkOddEven(parseInt(input, 10)));
+}
 
 module.exports = checkOddEven;
